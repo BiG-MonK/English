@@ -1,0 +1,10 @@
+<h1>ENGLISH</h1>
+
+<% words.forEach(function(word){ %>
+        <div>
+                <h2><%=word.value%></h2>
+                <img src="<%= word.image %>">
+                <span><%= word.created %></span>
+                <p><%= word.translate %></p>
+        </div>
+<% }) %>
