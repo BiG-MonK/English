@@ -1,3 +1,5 @@
+<% include ./partials/header %>
+
 <h1>ENGLISH</h1>
 
 <% words.forEach(function(word){ %>
@@ -8,3 +10,5 @@
                 <p><%= word.translate %></p>
         </div>
 <% }) %>
+
+<% include ./partials/footer %>
