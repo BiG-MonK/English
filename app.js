@@ -14,7 +14,7 @@ var wordSchema = new mongoose.Schema({
     value: String,
     created: {type: Date, default: Date.now},
     transcription: {
-        type: String, 
+        type: String,
         default: "placeholderimage.jpg"
     },
     translate: String,
@@ -31,6 +31,13 @@ var Word = mongoose.model("Word", wordSchema);
 app.get("/", function(req, res){
     res.redirect("/words");
 });
+
+// INDEX ROUTE
+app.get("/words/new", function(req, res){
+    res.render("new");
+});
+
+// CREATE ROUTE
 
 app.get("/words", function(req, res){
     Word.find({}, function(err, words){

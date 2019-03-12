@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+<div class="ui main container segment">
+    <div class="ui huge header">New Word</div>
+    <form action="/words" method="POST">
+        <input type="text" name="word[title]" placeholder="title">
+        <input type="text" name="word[title]" placeholder="title">
+        <input type="text" name="word[title]" placeholder="title">
+        <input type="text" name="word[title]" placeholder="title">
+        
+    </form>
+</div>
+<% include ./partials/footer %>
+
+
+
+<%#  value: String,
+    created: {type: Date, default: Date.now},
+    transcription: {
+        type: String, 
+        default: "placeholderimage.jpg"
+    },
+    translate: String,
+    image: {
+        type: String, 
+        default: "placeholderimage.jpg"
+    },
+    memorization: String,
+    parts_of_speech: String %>
